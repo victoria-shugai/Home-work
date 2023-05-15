@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW-4</title>
+</head>
+<body>
+    <script>
+    //Перепишите 'if' в '?' (тернарный) и switch. 
+    if (a + b < 4) {
+result = "Мало";
+} else {
+result = "Много";
+}
+
+
+let e = a + b;
+switch (e) {
+    case '1':
+    case '2':
+    case '3':
+        alert ("Мало");
+        break;
+    default:
+        alert ("Много");
+}
+
+let q = (a + b < 4) ? "Мало":
+        (a + b > 4) ? "Много":
+        "Тогда 4"
+    alert (q); 
+    
+    </script>
+
+<script>
+    // Выполните вычисления  1)
+
+    /*let x = "5";
+    let n = "3";
+    let w = "";
+
+    let y = 2 * Math.exp(x) + 1;
+    let z = Math.log(x) / x;
+
+    if (x >= Math.pow(z, 2)) { 
+         w = n * x + 2; 
+    } else {
+         w = x * y;
+    }
+    
+    alert (w);
+
+    //2
+
+    let x = 0.8;
+    let y = -3.75;
+    let r = "";
+
+    let a = Math.pow(Math.cos(4*x),2) - ((1 + Math.cos(4*y))/2);
+
+   if (a >= (Math.sin(Math.pow(y-1),2))){
+        r = tan(x) + tan((Math.PI/4)*x);
+    } else if  (a < Math.sin(Math.pow(y,2))) { 
+         r = (Math.PI/4)-x; 
+    } else {
+        alert(r);
+    }
+
+    alert (r);
+
+
+    //3
+    
+    let a = 7;
+    let b = 9;
+    let k = "";
+
+    
+    let x = Math.sqrt(2.3 + Math.pow(a,2))/(Math.log(Math.pow(b,3))) + 8.77;
+    let y = Math.asin(Math.pow(a,2)/Math.pow(b,3))/x;
+
+    if (x < Math.sqrt(Math.pow(y,5))) { 
+         k = (2 * Math.pow(x,2)) - (3 * y) - (19 * Math.pow(y,2)); 
+    } else if (x >= Math.sqrt(Math.pow(y,5))) {
+         k = Math.pow(x,2) - (6 * Math.pow(y,2));
+    } else {
+        alert(k);
+    }
+    
+    alert (k);
+
+
+    // 4
+
+    let m = Math.sin(5);
+    let n = Math.exp(m);
+    let k = m + n ;
+
+    let a = Math.log(Math.pow(n,2)) + m;
+    let b = Math.acos(k) / a;
+
+    if (a < Math.pow(b,3)) { 
+         w = Math.sqrt(a+1); 
+    } else if (a >= Math.pow(b,3)){
+         w = Math.sqrt(a+2);
+    } else {
+        alert(w);
+    }
+    
+    alert (w);*/
+   
+</script>
+
+<!-- <script>
+
+     //3
+    Задача из 5 шагов-строк:
+•	Создайте массив styles с элементами «Джаз», «Блюз».
+•	Добавьте в конец значение «Рок-н-Ролл»
+•	Замените предпоследнее значение с конца на «Классика». Код замены предпоследнего значения должен работать для массивов любой длины.
+•	Удалите первое значение массива и выведите его в консоль.
+•	Добавьте в начало значения «Рэп» и «Регги».
+
+    let styles = new Array ["Джаз","Блюз"];
+    styles[2] = "Рок-н-Ролл";
+    let value = styles.length -2; 
+    styles[value] = "Классика";
+    console.log (styles.shift());
+    styles.unshift("Рэп","Регги");
+console.log (styles);
+
+
+   
+   //4  Написать функцию, которая возвращает последний элемент массива.
+function getElem() {
+    let value2 = styles.at(-1);
+    console.log (value2);
+}
+getElem();
+</script> -->
+
+<script>
+
+      /*5
+     Напишите код, который:
+•	Запрашивает по очереди значения при помощи prompt и сохраняет их в массиве.
+•	Заканчивает ввод, как только посетитель введёт пустую строку, не число или нажмёт «Отмена».
+•	При этом ноль 0 не должен заканчивать ввод, это разрешённое число.
+•	Выводит сумму всех значений массива.*/
+
+
+      /*function summArr (){
+    let Arr = [];
+
+    while(true){
+    let nam = prompt ("Запишите значение:", 0);
+
+    if (nam === "" || nam === null || !isFinite(nam)) break; 
+        Arr.push(+nam);
+    }
+
+    let sum =0;
+    for(let number of Arr){
+        sum += number;
+    }
+    return sum;
+
+}
+    alert( summArr() );*/
+</script>
+
+<script>
+   /* 6 Напишите программу определения номера и значения максимального элемента массива, 
+   например, D={12; 0.4; 30; -2; 9.3}. Массив ввести в prompt начиная с первого номера для элемента.*/
+
+    function getMaxOfArray(arr) {
+        for (let item of arr) { 
+    partialSum += item; 
+    maxSum = Math.max(maxSum, partialSum); 
+    if (partialSum < 0) partialSum = 0; 
+  }
+
+  return maxSum;
+}
+alert (num);
+</script>
+
+</body>
+</html>
